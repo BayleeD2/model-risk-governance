@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js
+.next/
+out/
+build/
+
+# Environment variables — never commit
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+
+# Python analytics service
+analytics-service/__pycache__/
+analytics-service/.venv/
+analytics-service/venv/
+analytics-service/*.pyc
+analytics-service/*.pyo
+analytics-service/.pytest_cache/
+analytics-service/dist/
+analytics-service/*.egg-info/
+
+# Misc
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vercel
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,25 @@
+{
+  "id": "fixture-model-08",
+  "name": "SME Credit Decision Engine",
+  "description": "XGBoost model automating credit decisions for SME lending applications up to £500k.",
+  "model_type": "xgboost",
+  "use_case": "credit_scoring",
+  "owner_name": "SME Risk",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["sr117", "ss123", "eu_ai_act"],
+    "training_data": "3 years of SME application and performance data, 65,000 accounts",
+    "features": ["companies_house_age", "filed_accounts_profitability", "director_bureau_score", "sector_default_rate", "turnover_volatility"],
+    "performance_metrics": {
+      "gini": 0.52,
+      "approval_rate": 0.61,
+      "default_rate_approved": 0.031
+    },
+    "last_validation_date": "2023-09-01",
+    "next_review_date": "2024-09-01",
+    "model_version": "1.2.0",
+    "deployment_environment": "production",
+    "decisions_automated_pct": 0.72,
+    "challenger_model": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "fixture-model-03",
+  "name": "Auto Insurance Pricing Engine",
+  "description": "GLM-based pricing model for personal auto insurance policies, used to set premium rates at point of sale.",
+  "model_type": "glm",
+  "use_case": "insurance_pricing",
+  "owner_name": "Actuarial Modelling",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["sr117", "nist_rmf"],
+    "training_data": "5 years of policy and claims data, 2.1M policies",
+    "features": ["age", "vehicle age", "annual mileage", "claims history", "postcode risk band", "no claims discount"],
+    "performance_metrics": {
+      "combined_ratio_lift": 0.04,
+      "gini": 0.44
+    },
+    "last_validation_date": "2023-11-20",
+    "next_review_date": "2024-11-20",
+    "model_version": "3.0.1",
+    "deployment_environment": "production",
+    "fair_lending_review": "completed_2023",
+    "challenger_model": false
+  }
+}

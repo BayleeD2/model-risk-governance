@@ -1,0 +1,24 @@
+{
+  "id": "fixture-model-01",
+  "name": "CRE Scorecard v2",
+  "description": "Commercial real estate credit scoring model used for loan origination decisions on properties valued $1M–$50M.",
+  "model_type": "scorecard",
+  "use_case": "credit_scoring",
+  "owner_name": "Risk Quantitative Team",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["sr117", "ss123"],
+    "training_data": "10 years of CRE loan performance data (2012–2022), 42,000 observations",
+    "features": ["LTV ratio", "DSCR", "property type", "location tier", "borrower net worth"],
+    "performance_metrics": {
+      "gini": 0.61,
+      "ks_statistic": 0.38,
+      "approval_rate": 0.54
+    },
+    "last_validation_date": "2024-03-15",
+    "next_review_date": "2025-03-15",
+    "model_version": "2.1.0",
+    "deployment_environment": "production",
+    "challenger_model": false
+  }
+}

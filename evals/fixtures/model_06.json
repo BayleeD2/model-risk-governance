@@ -1,0 +1,25 @@
+{
+  "id": "fixture-model-06",
+  "name": "Mortgage LGD Model",
+  "description": "Loss given default model for residential mortgage portfolio under IFRS 9 expected credit loss calculation.",
+  "model_type": "regression",
+  "use_case": "regulatory_capital",
+  "owner_name": "Credit Risk Models",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["sr117", "ss123"],
+    "training_data": "15 years of mortgage default and recovery data, 28,000 resolved defaults",
+    "features": ["current_LTV", "property_type", "region", "time_in_default", "possession_indicator"],
+    "performance_metrics": {
+      "r_squared": 0.62,
+      "mean_absolute_error": 0.07,
+      "downturn_lgd_adjustment": 0.12
+    },
+    "last_validation_date": "2024-04-05",
+    "next_review_date": "2025-04-05",
+    "model_version": "1.5.0",
+    "deployment_environment": "production",
+    "ifrs9_stage": "all_stages",
+    "challenger_model": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "fixture-model-04",
+  "name": "Consumer Credit PD Model",
+  "description": "Probability of default model for unsecured consumer lending used in Basel III RWA calculation.",
+  "model_type": "logistic_regression",
+  "use_case": "regulatory_capital",
+  "owner_name": "Capital Models Team",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["sr117", "ss123"],
+    "training_data": "7 years of retail lending data, 890,000 accounts, through-the-cycle calibration",
+    "features": ["bureau score", "income", "debt_to_income", "months_on_book", "delinquency_history"],
+    "performance_metrics": {
+      "gini": 0.58,
+      "brier_score": 0.041,
+      "hosmer_lemeshow_p": 0.23
+    },
+    "last_validation_date": "2024-01-10",
+    "next_review_date": "2025-01-10",
+    "model_version": "4.2.0",
+    "deployment_environment": "production",
+    "basel_use": "AIRB",
+    "challenger_model": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "fixture-model-02",
+  "name": "Transaction Fraud Detector",
+  "description": "Real-time gradient boosting model classifying card-present and card-not-present transactions as fraudulent or legitimate.",
+  "model_type": "gradient_boosting",
+  "use_case": "fraud_detection",
+  "owner_name": "Fraud Analytics",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["sr117", "eu_ai_act"],
+    "training_data": "24 months of transaction history, 180M transactions, 0.12% fraud rate",
+    "features": ["transaction amount", "merchant category", "velocity_1h", "velocity_24h", "device fingerprint", "geolocation delta"],
+    "performance_metrics": {
+      "precision": 0.91,
+      "recall": 0.78,
+      "f1": 0.84,
+      "false_positive_rate": 0.009
+    },
+    "last_validation_date": "2024-06-01",
+    "next_review_date": "2024-12-01",
+    "model_version": "5.3.2",
+    "deployment_environment": "production",
+    "inference_latency_ms": 12,
+    "challenger_model": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "fixture-model-10",
+  "name": "ESG Screening Classifier",
+  "description": "NLP classifier analysing company disclosures and news to assign ESG risk scores for investment screening.",
+  "model_type": "transformer_nlp",
+  "use_case": "esg_scoring",
+  "owner_name": "Sustainable Finance",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["eu_ai_act", "nist_rmf"],
+    "training_data": "Annual reports, ESG disclosures, and news articles for 8,000 listed companies (2018–2023)",
+    "features": ["disclosure_completeness", "controversy_score", "carbon_intensity_reported", "governance_flags"],
+    "performance_metrics": {
+      "accuracy": 0.79,
+      "macro_f1": 0.74,
+      "human_review_agreement": 0.82
+    },
+    "last_validation_date": "2024-03-30",
+    "next_review_date": "2024-09-30",
+    "model_version": "1.1.0",
+    "deployment_environment": "production",
+    "explainability_method": "SHAP",
+    "challenger_model": false
+  }
+}

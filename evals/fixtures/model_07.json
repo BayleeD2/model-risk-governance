@@ -1,0 +1,20 @@
+{
+  "id": "fixture-model-07",
+  "name": "Customer Churn Predictor",
+  "description": "Random forest model identifying retail banking customers at high risk of attrition within 90 days.",
+  "model_type": "random_forest",
+  "use_case": "customer_retention",
+  "owner_name": "Retail Analytics",
+  "status": "draft",
+  "metadata": {
+    "regulatory_frameworks": ["sr117"],
+    "training_data": null,
+    "features": null,
+    "performance_metrics": null,
+    "last_validation_date": null,
+    "next_review_date": null,
+    "model_version": "0.9.0",
+    "deployment_environment": "staging",
+    "challenger_model": false
+  }
+}

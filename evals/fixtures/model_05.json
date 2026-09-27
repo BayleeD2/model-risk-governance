@@ -1,0 +1,25 @@
+{
+  "id": "fixture-model-05",
+  "name": "AML Transaction Monitoring",
+  "description": "Rule-augmented neural network flagging transactions for potential money laundering review.",
+  "model_type": "neural_network",
+  "use_case": "aml_compliance",
+  "owner_name": "Financial Crime Prevention",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["sr117", "eu_ai_act", "nist_rmf"],
+    "training_data": "36 months of SWIFT and domestic payment data, 500M transactions",
+    "features": ["counterparty jurisdiction risk", "transaction pattern deviation", "customer risk rating", "network centrality"],
+    "performance_metrics": {
+      "sar_conversion_rate": 0.18,
+      "alert_volume_monthly": 12400,
+      "false_positive_rate": 0.82
+    },
+    "last_validation_date": "2024-02-28",
+    "next_review_date": "2024-08-28",
+    "model_version": "2.0.0",
+    "deployment_environment": "production",
+    "human_review_required": true,
+    "challenger_model": false
+  }
+}

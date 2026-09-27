@@ -1,0 +1,26 @@
+{
+  "id": "fixture-model-09",
+  "name": "Market Risk VaR Model",
+  "description": "Historical simulation VaR model for trading book market risk capital calculation under FRTB.",
+  "model_type": "historical_simulation",
+  "use_case": "market_risk",
+  "owner_name": "Market Risk Quantitative",
+  "status": "active",
+  "metadata": {
+    "regulatory_frameworks": ["sr117", "nist_rmf"],
+    "training_data": "10 years of daily P&L and risk factor returns, 2,500 scenarios",
+    "features": ["equity_delta", "fx_delta", "ir_delta", "credit_spread_delta", "vega"],
+    "performance_metrics": {
+      "var_confidence": 0.99,
+      "backtesting_exceptions_250d": 2,
+      "backtesting_zone": "green",
+      "es_confidence": 0.975
+    },
+    "last_validation_date": "2024-05-15",
+    "next_review_date": "2025-05-15",
+    "model_version": "6.0.0",
+    "deployment_environment": "production",
+    "frtb_ima_approved": true,
+    "challenger_model": false
+  }
+}
